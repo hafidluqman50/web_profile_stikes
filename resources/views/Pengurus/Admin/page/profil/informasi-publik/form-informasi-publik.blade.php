@@ -1,4 +1,4 @@
-@extends('Pengurus.layout.layout-app')
+s@extends('Pengurus.layout.layout-app')
 
 @section('content')
     <div class="content-header">
@@ -40,6 +40,8 @@
                   <option value="statistik" @if(isset($row)){{$row->halaman=='statistik'?'selected':''}}@endif>Statistik</option>
                   <option value="seminar-dan-pelatihan" @if(isset($row)){{$row->halaman=='seminar-dan-pelatihan'?'selected':''}}@endif>Seminar Dan Pelatihan</option>
                   <option value="alur-pendaftaran" @if(isset($row)){{$row->halaman=='alur-pendaftaran'?'selected':''}}@endif>Alur Pendaftaran</option>
+                  <option value="facebook" @if(isset($row)){{$row->halaman=='facebook'?'selected':''}}@endif>Medsos > Facebook</option>
+                  <option value="twitter" @if (isset($row)){{$row->halaman=='twitter'?'selected':''}}@endif>Medsos > Twitter</option>
                 </select>
               </div>
 	      		</div>

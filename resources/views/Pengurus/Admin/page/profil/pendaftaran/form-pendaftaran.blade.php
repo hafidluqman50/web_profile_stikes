@@ -28,12 +28,16 @@
                 <label for="" class="form-label">Konten</label>
                 <textarea name="konten" class="form-control" id="" cols="30" rows="10">{{isset($row)?$row->konten:''}}</textarea>
               </div>
-	      		</div>{{-- 
-            <select name="halaman" class="form-control" required="required">
-              <option selected disabled>=== Pilih Halaman ===</option>
-              <option value="kegiatan-mahasiswa" @if(isset($row)){{$row->halaman=='kegiatan-mahasiswa'?'selected':''}}@endif>Kegiatan Mahasiswa</option>
-            </select> --}}
-      			<input type="hidden" name="menu" value="mahasiswa-alumni">
+              <div class="form-group">
+                <label for="">Halaman</label>
+                <select name="halaman" class="form-control" required="required">
+                  <option selected disabled>=== Pilih Halaman ===</option>
+                  <option value="brosur" @if(isset($row)){{$row->halaman=='brosur'?'selected':''}}@endif>Brosur</option>
+                  <option value="link" @if(isset($row)){{$row->halaman=='link'?'selected':''}}@endif>Link</option>
+                </select>
+              </div>
+            </div>
+      			<input type="hidden" name="menu" value="pendaftaran">
             <input type="hidden" name="id_profil" value="{{isset($row)?$row->id_profil:''}}">
 	      		<div class="card-footer">
 	      			<button type="submit" class="btn btn-primary">Simpan</button>

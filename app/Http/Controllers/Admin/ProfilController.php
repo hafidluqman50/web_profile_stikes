@@ -199,6 +199,29 @@ class ProfilController extends Controller
         return view('Pengurus.Admin.page.profil.lembaga.form-lembaga',compact('title','row','page','active'));
     }
 
+    public function pendaftaran() {
+        $title = 'Pendaftaran | Admin';
+        $page = 'pendaftaran';
+        $active = 'active';
+        $data = Profil::where('menu','pendaftaran')->get();
+        return view('Pengurus.Admin.page.profil.pendaftaran.main',compact('title','page','active','data'));
+    }
+
+    public function tambahPendaftaran() {
+        $title = 'Form Pendaftaran | Admin';
+        $page = 'pendaftaran';
+        $active = 'active';
+        return view('Pengurus.Admin.page.profil.pendaftaran.form-pendaftaran',compact('title','page','active'));
+    }
+
+    public function editPendaftaran($id) {
+        $title = 'Form Pendaftaran | Admin';
+        $page = 'pendaftaran';
+        $active = 'active';
+        $row = Profile::where('id_profil',$id)->where('menu','pendaftaran')->firstOrFail();
+        return view('Pengurus.Admin.page.profil.pendaftaran.form-pendaftaran',compact('title','row','page','active'));
+    }
+
     public function delete($menu,$id) {
         Profil::where('menu',$menu)->where('id_profil',$id)->delete();
         return redirect('/admin/data-menu-'.$menu)->with('message','Berhasil Hapus');
@@ -224,6 +247,6 @@ class ProfilController extends Controller
             Profil::where('id_profil',$id)->update($array);
             $message = 'Berhasil Update Data';
         }
-        return redirect('/admin/data-menu-tentang')->with('message',$message);
+        return redirect('/admin/data-menu-'.$menu)->with('message',$message);
     }
 }

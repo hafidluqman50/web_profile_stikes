@@ -97,6 +97,12 @@ $level = Auth::user()->level==1?'admin':(Auth::user()->level==0?'petugas':'');
                 </a>
               </li>
               <li class="nav-item">
+                <a href="{{url('/admin/data-menu-pendaftaran')}}" class="nav-link" @if (isset($page)){{$page=='pendaftaran'?'active':''}}@endif>
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Pendaftaran</p>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a href="{{ url('/admin/data-menu-akademik') }}" class="nav-link @if(isset($page)){{$page=='akademik'?'active':''}}@endif">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Akademik</p>

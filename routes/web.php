@@ -23,6 +23,7 @@ Route::get('/tentang/{url}',['as'=>'tentang-content','uses'=>'Home\HomeControlle
 Route::get('/tentang/visi-dan-misi/{url}',['as'=>'tentang-visi-misi','uses'=>'Home\HomeController@tentang']);
 Route::get('/pendaftaran/{url}',['as'=>'pendaftaran-content','uses'=>'Home\HomeController@pendaftaran']);
 Route::get('/informasi/{url}',['as'=>'informasi-content','uses'=>'Home\HomeController@informasi']);
+Route::get('/informasi/medsos/{url}',['as'=>'informasi-content','uses'=>'Home\HomeController@informasi']);
 Route::get('/akademik/{url}',['as'=>'akademik-content','uses'=>'Home\HomeController@akademik']);
 Route::get('/penelitian/{url}',['as'=>'penelitian-content','uses'=>'Home\HomeController@penelitian']);
 Route::get('/kerja-sama/{url}',['as'=>'kerja-sama-content','uses'=>'Home\HomeController@kerjaSama']);
@@ -80,7 +81,10 @@ Route::group(['prefix'=>'admin','middleware'=>'isAdmin'],function(){
 	Route::get('/data-menu-mahasiswa-alumni/edit/{id}',['as'=>'admin-mahasiswa-alumni-edit','uses'=>'Admin\ProfilController@editMahasiswa']);
 	Route::get('/data-menu-lembaga',['as'=>'admin-data-lembaga','uses'=>'Admin\ProfilController@lembaga']);
 	Route::get('/data-menu-lembaga/tambah',['as'=>'admin-lembaga-tambah','uses'=>'Admin\ProfilController@tambahLembaga']);
-	Route::get('/data-menu-lembaga/edit/{id}',['as'=>'admin-lembaga-tambah','uses'=>'Admin\ProfilController@tambahLembaga']);
+	Route::get('/data-menu-lembaga/edit/{id}',['as'=>'admin-lembaga-tambah','uses'=>'Admin\ProfilController@editLembaga']);
+	Route::get('/data-menu-pendaftaran',['as'=>'admin-data-pendaftaran','uses'=>'Admin\ProfilController@pendaftaran']);
+	Route::get('/data-menu-pendaftaran/tambah',['as'=>'admin-pendaftaran-tambah','uses'=>'Admin\ProfilController@tambahPendaftaran']);
+	Route::get('/data-menu-pendaftaran/edit/{id}',['as'=>'admin-pendaftaran-tambah','uses'=>'Admin\ProfilController@editPendaftaran']);
 	Route::get('/profil/{menu}/delete/{id}',['as'=>'admin-profil-delete','uses'=>'Admin\ProfilController@delete']);
 	Route::post('/profil/save',['as'=>'admin-profil-save','uses'=>'Admin\ProfilController@save']);
 	// END PROFIL //

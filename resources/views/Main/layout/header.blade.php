@@ -73,8 +73,8 @@
 										<li><a href="{{url('/informasi/alur-pendaftaran')}}">Alur Pendaftaran</a></li>
 										<li class="menu-has-children"><a href="#">Medsos</a>
 											<ul>
-												<li><a href="#">Facebook</a></li>
-												<li><a href="#">Twitter</a></li>
+												<li><a href="{{url('/informasi/medsos/facebook')}}">Facebook</a></li>
+												<li><a href="{{url('/informasi/medsos/twitter')}}">Twitter</a></li>
 											</ul>
 										</li>
 										<li class="menu-has-children"><a href="#">Support</a>
