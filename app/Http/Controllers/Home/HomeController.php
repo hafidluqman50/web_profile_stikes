@@ -78,6 +78,12 @@ class HomeController extends Controller
         return view('Main.page.lembaga',compact('title','data'));
     }
 
+    public function mahasiswaAlumni($url) {
+        $data = Profil::where('halaman',$url)->where('menu','mahasiswa-alumni')->firstOrFail();
+        $title = $data->judul_profil;
+        return view('Main.page.mahasiswa-alumni',compact('title','data'));
+    }
+
     public function kegiatan() {
     	$title = 'Kegiatan';
         $data = Konten::with('users')->where('kategori','kegiatan')->orderBy('tanggal_konten','desc')->orderBy('tanggal_konten','desc')->paginate(10);

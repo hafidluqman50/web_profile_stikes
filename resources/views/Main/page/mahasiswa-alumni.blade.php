@@ -40,21 +40,21 @@
 						<div class="single-list flex-row d-flex">
 							<div class="details">
 								<a href="{{ url('/mahasiswa-alumni/portal-mahasiswa') }}">
-									Portal Mahasiswa
+									<h6>Portal Mahasiswa</h6>
 								</a>
 							</div>
 						</div>
 						<div class="single-list flex-row d-flex">
 							<div class="details">
 								<a href="{{ url('/mahasiswa-alumni/alumni') }}">
-									Alumni
+									<h6>Alumni</h6>
 								</a>
 							</div>
 						</div>
 						<div class="single-list flex-row d-flex">
 							<div class="details">
 								<a href="{{ url('/mahasiswa-alumni/kegiatan-mahasiswa') }}">
-									Kegiatan Mahasiswa
+									<h6>Kegiatan Mahasiswa</h6>
 								</a>
 							</div>
 						</div>

@@ -40,14 +40,14 @@
 						<div class="single-list flex-row d-flex">
 							<div class="details">
 								<a href="{{ url('/prodi/s1-farmasi') }}">
-									S1 Farmasi
+									<h6>S1 Farmasi</h6>
 								</a>
 							</div>
 						</div>
 						<div class="single-list flex-row d-flex">
 							<div class="details">
 								<a href="{{ url('/prodi/d3-keperawatan') }}">
-									D3 Perawatan
+									<h6>D3 Perawatan</h6>
 								</a>
 							</div>
 						</div>

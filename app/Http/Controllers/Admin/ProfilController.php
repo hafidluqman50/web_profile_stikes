@@ -153,7 +153,7 @@ class ProfilController extends Controller
         $title = 'Mahasiswa Alumni | Admin';
         $page = 'mahasiswa-alumni';
         $active = 'active';
-        $data = Profil::where('menu','mahasiswa-alumni');
+        $data = Profil::where('menu','mahasiswa-alumni')->get();
         return view('Pengurus.Admin.page.profil.mahasiswa-alumni.main',compact('title','data','active','page'));
     }
 

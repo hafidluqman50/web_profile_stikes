@@ -28,13 +28,16 @@
                 <label for="" class="form-label">Konten</label>
                 <textarea name="konten" class="form-control" id="" cols="30" rows="10">{{isset($row)?$row->konten:''}}</textarea>
               </div>
+              <div class="form-group">
+                <label for="">Halaman</label>
+                <select name="halaman" class="form-control" required="required">
+                  <option selected disabled>=== Pilih Halaman ===</option>
+                  <option value="portal-mahasiswa" @if(isset($row)){{$row->halaman=='portal-mahasiswa'?'selected':''}}@endif>Portal Mahasiswa</option>
+                  <option value="alumni" @if(isset($row)){{$row->halaman=='alumni'?'selected':''}}@endif>Alumni</option>
+                  <option value="kegiatan-mahasiswa" @if(isset($row)){{$row->halaman=='kegiatan-mahasiswa'?'selected':''}}@endif>Kegiatan Mahasiswa</option>
+                </select>
+              </div>
 	      		</div>
-            <select name="halaman" class="form-control" required="required">
-              <option selected disabled>=== Pilih Halaman ===</option>
-              <option value="portal-mahasiswa" @if(isset($row)){{$row->halaman=='portal-mahasiswa'?'selected':''}}@endif>Portal Mahasiswa</option>
-              <option value="alumni" @if(isset($row)){{$row->halaman=='alumni'?'selected':''}}@endif>Alumni</option>
-              <option value="kegiatan-mahasiswa" @if(isset($row)){{$row->halaman=='kegiatan-mahasiswa'?'selected':''}}@endif>Kegiatan Mahasiswa</option>
-            </select>
       			<input type="hidden" name="menu" value="mahasiswa-alumni">
             <input type="hidden" name="id_profil" value="{{isset($row)?$row->id_profil:''}}">
 	      		<div class="card-footer">

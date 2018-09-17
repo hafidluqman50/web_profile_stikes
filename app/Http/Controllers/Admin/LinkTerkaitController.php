@@ -204,8 +204,8 @@ class LinkTerkaitController extends Controller
         $id_link = $request->id_link_terkait;
         $array = [
             'judul_link' => $judul,
-            'link' => $link,
-            'kategori' => $kategori,
+            'link'       => $link,
+            'kategori'   => $kategori,
         ];
         if ($id_link == '') {
             LinkTerkait::create($array);
