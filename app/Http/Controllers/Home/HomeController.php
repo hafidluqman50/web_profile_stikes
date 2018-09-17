@@ -66,10 +66,10 @@ class HomeController extends Controller
         return view('Main.page.kerja-sama',compact('title','data'));
     }
 
-    public function fakultas($url) {
-        $data = Profil::where('halaman',$url)->where('menu','fakultas')->firstOrFail();
+    public function prodi($url) {
+        $data = Profil::where('halaman',$url)->where('menu','prodi')->firstOrFail();
         $title = $data->judul_profil;
-        return view('Main.page.fakultas',compact('title','data'));
+        return view('Main.page.prodi',compact('title','data'));
     }
 
     public function lembaga($url) {

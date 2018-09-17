@@ -7,8 +7,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="hero-nav-area">
-						<h1 class="text-white">Lembaga</h1>
-						<h4 class="text-white link-nav">{{ $data->judul_profil }}</h4>
+						<h2 class="text-white">{{ $data->judul_profil }}</h2>
 					</div>
 				</div>
 			</div>
@@ -54,7 +53,7 @@
 						</div>
 						<div class="single-list flex-row d-flex">
 							<div class="details">
-								<a href="{{ url('/penelitian/asrama') }}">
+								<a href="{{ url('/lembaga/asrama') }}">
 									<h6>Asrama</h6>
 								</a>
 							</div>

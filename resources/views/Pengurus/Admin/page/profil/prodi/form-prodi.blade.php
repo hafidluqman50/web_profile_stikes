@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Form Menu Fakultas</h1>
+            <h1 class="m-0 text-dark">Form Menu Prodi</h1>
           </div>
         </div>
       </div>
@@ -15,7 +15,7 @@
       <div class="container-fluid">
       	<div class="card">
       		<div class="card-header">
-      			<h5 class="title">Form Menu Fakultas</h5>
+      			<h5 class="title">Form Menu Prodi</h5>
       		</div>
 			     <form method="POST" action="{{url('/admin/profil/save')}}">
 	      		<div class="card-body">
@@ -37,7 +37,7 @@
                 </select>
               </div>
 	      		</div>
-      			<input type="hidden" name="menu" value="fakultas">
+      			<input type="hidden" name="menu" value="prodi">
             <input type="hidden" name="id_profil" value="{{isset($row)?$row->id_profil:''}}">
 	      		<div class="card-footer">
 	      			<button type="submit" class="btn btn-primary">Simpan</button>

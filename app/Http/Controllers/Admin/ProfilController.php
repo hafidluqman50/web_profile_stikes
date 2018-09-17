@@ -55,7 +55,6 @@ class ProfilController extends Controller
         return view('Pengurus.Admin.page.profil.informasi-publik.form-informasi-publik',compact('title','row','page','active'));
     }
 
-
     public function akademik() {
         $title = 'Akademik | Admin';
         $page = 'akademik';
@@ -127,30 +126,28 @@ class ProfilController extends Controller
         return view('Pengurus.Admin.page.profil.kerja-sama.form-kerja-sama',compact('title','row','active'));
     }
 
-
-    public function fakultas() {
-        $title = 'Fakultas | Admin';
-        $page = 'fakultas';
+    public function prodi() {
+        $title = 'Prodi | Admin';
+        $page = 'prodi';
         $active = 'active';
-        $data = Profil::where('menu','fakultas')->get();
-        return view('Pengurus.Admin.page.profil.fakultas.main',compact('title','data','page','active'));
+        $data = Profil::where('menu','prodi')->get();
+        return view('Pengurus.Admin.page.profil.prodi.main',compact('title','data','page','active'));
     }
 
-    public function tambahFakultas() {
-        $title = 'Form Fakultas | Admin';
-        $page = 'fakultas';
+    public function tambahProdi() {
+        $title = 'Form Prodi | Admin';
+        $page = 'prodi';
         $active = 'active';
-        return view('Pengurus.Admin.page.profil.fakultas.form-fakultas',compact('title','page','active'));
+        return view('Pengurus.Admin.page.profil.prodi.form-prodi',compact('title','page','active'));
     }
 
-    public function editFakultas($id) {
-        $title = 'Form Fakultas | Admin';
-        $page = 'fakultas';
+    public function editProdi($id) {
+        $title = 'Form Prodi | Admin';
+        $page = 'prodi';
         $active = 'active';
-        $row = Profil::where('id_profil',$id)->where('menu','fakultas')->firstOrFail();
-        return view('Pengurus.Admin.page.profil.fakultas.form-fakultas',compact('title','row','page','active'));
+        $row = Profil::where('id_profil',$id)->where('menu','prodi')->firstOrFail();
+        return view('Pengurus.Admin.page.profil.prodi.form-prodi',compact('title','row','page','active'));
     }
-
 
     public function mahasiswa() {
         $title = 'Mahasiswa Alumni | Admin';

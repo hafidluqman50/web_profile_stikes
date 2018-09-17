@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Data Menu Fakultas</h1>
+            <h1 class="m-0 text-dark">Data Menu Prodi</h1>
           </div>
         </div>
       </div>
@@ -15,7 +15,7 @@
       <div class="container-fluid">
       	<div class="card">
       		<div class="card-header">
-      			<h5 class="title">Data Menu Fakultas</h5>
+      			<h5 class="title">Data Menu Prodi</h5>
       		</div>
       		<div class="card-body">
             @if(session()->has('message'))
@@ -27,7 +27,7 @@
               {{ session('log') }} <button class="close" data-dismiss="alert">X</button>
             </div>
             @endif
-            <a href="{{ url('/admin/data-menu-fakultas/tambah') }}">
+            <a href="{{ url('/admin/data-menu-prodi/tambah') }}">
               <button class="btn btn-primary">
                 Tambah
               </button>
@@ -50,10 +50,10 @@
                   <td>{{ $value->judul_profil }}</td>
                   <td>{{ '/'.$value->halaman }}</td>
                   <td>
-                    <a href="{{url('/admin/data-menu-fakultas/edit',$value->id_profil)}}">
+                    <a href="{{url('/admin/data-menu-prodi/edit',$value->id_profil)}}">
                       <button class="btn btn-warning">Edit</button>
                     </a>
-                    <a href="{{url('/admin/profil/fakultas/delete',$value->id_profil)}}">
+                    <a href="{{url('/admin/profil/prodi/delete',$value->id_profil)}}">
                       <button class="btn btn-danger" onclick="return confirm('Yakin Hapus ?');">Hapus</button>
                     </a>
                   </td>

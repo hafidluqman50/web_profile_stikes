@@ -1,4 +1,4 @@
-s@extends('Pengurus.layout.layout-app')
+@extends('Pengurus.layout.layout-app')
 
 @section('content')
     <div class="content-header">

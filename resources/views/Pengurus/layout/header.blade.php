@@ -121,9 +121,9 @@ $level = Auth::user()->level==1?'admin':(Auth::user()->level==0?'petugas':'');
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/admin/data-menu-fakultas') }}" class="nav-link @if(isset($page)){{$page=='fakultas'?'active':''}}@endif">
+                <a href="{{ url('/admin/data-menu-prodi') }}" class="nav-link @if(isset($page)){{$page=='prodi'?'active':''}}@endif">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Fakultas</p>
+                  <p>Prodi</p>
                 </a>
               </li>
               <li class="nav-item">

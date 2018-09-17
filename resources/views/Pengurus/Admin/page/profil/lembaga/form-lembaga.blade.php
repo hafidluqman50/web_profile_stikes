@@ -38,7 +38,7 @@
                 </select>
               </div>
 	      		</div>
-      			<input type="hidden" name="menu" value="akademik">
+      			<input type="hidden" name="menu" value="lembaga">
             <input type="hidden" name="id_profil" value="{{isset($row)?$row->id_profil:''}}">
 	      		<div class="card-footer">
 	      			<button type="submit" class="btn btn-primary">Simpan</button>

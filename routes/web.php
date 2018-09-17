@@ -28,7 +28,7 @@ Route::get('/akademik/{url}',['as'=>'akademik-content','uses'=>'Home\HomeControl
 Route::get('/penelitian/{url}',['as'=>'penelitian-content','uses'=>'Home\HomeController@penelitian']);
 Route::get('/kerja-sama/{url}',['as'=>'kerja-sama-content','uses'=>'Home\HomeController@kerjaSama']);
 Route::get('/kerja-sama/perguruan-tinggi/{url}',['as'=>'dalam-negeri','uses'=>'Home\HomeController@kerjaSama']);
-Route::get('/fakultas/{url}',['as'=>'fakultas-content','uses'=>'Home\HomeController@fakultas']);
+Route::get('/prodi/{url}',['as'=>'prodi-content','uses'=>'Home\HomeController@prodi']);
 Route::get('/mahasiswa-alumni/{url}',['as'=>'mahasiswa-content','uses'=>'Home\HomeController@mahasiswaAlumni']);
 Route::get('/lembaga/{url}',['as'=>'lembaga-content','uses'=>'Home\HomeController@lembaga']);
 
@@ -73,9 +73,9 @@ Route::group(['prefix'=>'admin','middleware'=>'isAdmin'],function(){
 	Route::get('/data-menu-kerja-sama',['as'=>'admin-data-kerja-sama','uses'=>'Admin\ProfilController@kerjaSama']);
 	Route::get('/data-menu-kerja-sama/tambah',['as'=>'admin-kerja-sama-tambah','uses'=>'Admin\ProfilController@tambahKerjaSama']);
 	Route::get('/data-menu-kerja-sama/edit/{id}',['as'=>'admin-kerja-sama-edit','uses'=>'Admin\ProfilController@editKerjaSama']);
-	Route::get('/data-menu-fakultas',['as'=>'admin-data-fakultas','uses'=>'Admin\ProfilController@fakultas']);
-	Route::get('/data-menu-fakultas/tambah',['as'=>'admin-fakultas-tambah','uses'=>'Admin\ProfilController@tambahFakultas']);
-	Route::get('/data-menu-fakultas/edit/{id}',['as'=>'admin-fakultas-edit','uses'=>'Admin\ProfilController@editFakultas']);
+	Route::get('/data-menu-prodi',['as'=>'admin-data-prodi','uses'=>'Admin\ProfilController@prodi']);
+	Route::get('/data-menu-prodi/tambah',['as'=>'admin-prodi-tambah','uses'=>'Admin\ProfilController@tambahProdi']);
+	Route::get('/data-menu-prodi/edit/{id}',['as'=>'admin-prodi-edit','uses'=>'Admin\ProfilController@editProdi']);
 	Route::get('/data-menu-mahasiswa-alumni',['as'=>'admin-data-mahasiswa-alumni','uses'=>'Admin\ProfilController@mahasiswa']);
 	Route::get('/data-menu-mahasiswa-alumni/tambah',['as'=>'admin-mahasiswa-alumni-tambah','uses'=>'Admin\ProfilController@tambahMahasiswa']);
 	Route::get('/data-menu-mahasiswa-alumni/edit/{id}',['as'=>'admin-mahasiswa-alumni-edit','uses'=>'Admin\ProfilController@editMahasiswa']);

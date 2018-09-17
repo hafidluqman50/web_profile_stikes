@@ -13,7 +13,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="latest-post-area pb-120">
+	<section class="mg-top-15 pb-120">
 		<div class="container no-padding">
 			<div class="row">
 				<div class="col-lg-8 post-list">
@@ -36,25 +36,18 @@
 			<div class="col-lg-4">
 				<div class="sidebars-area">
 					<div class="single-sidebar-widget most-popular-widget">
-						<h6 class="title">Kerja Sama</h6>
+						<h6 class="title">Mahasiswa Dan Alumni</h6>
 						<div class="single-list flex-row d-flex">
 							<div class="details">
-								<a href="{{ url('/kerja-sama/perguruan-tinggi/dalam-negeri') }}">
-									Perguruan Tinggi > Dalam Negeri
+								<a href="{{ url('/prodi/s1-farmasi') }}">
+									S1 Farmasi
 								</a>
 							</div>
 						</div>
 						<div class="single-list flex-row d-flex">
 							<div class="details">
-								<a href="{{ url('/kerja-sama/perguruan-tinggi/luar-negeri') }}">
-									Perguruan Tinggi > Luar Negeri
-								</a>
-							</div>
-						</div>
-						<div class="single-list flex-row d-flex">
-							<div class="details">
-								<a href="{{ url('/kerja-sama/pemerintah') }}">
-									<h6>Pemerintah</h6>
+								<a href="{{ url('/prodi/d3-keperawatan') }}">
+									D3 Perawatan
 								</a>
 							</div>
 						</div>

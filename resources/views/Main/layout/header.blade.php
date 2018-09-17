@@ -112,22 +112,22 @@
 								</li>
 								<li class="menu-has-children"><a href="#">Prodi</a>
 									<ul>
-										<li><a href="#">S1 Farmasi</a></li>
-										<li><a href="#">D3 Keperawatan</a></li>
+										<li><a href="{{url('/prodi/s1-farmasi')}}">S1 Farmasi</a></li>
+										<li><a href="{{url('/prodi/d3-keperawatan')}}">D3 Keperawatan</a></li>
 									</ul>
 								</li>
 								<li class="menu-has-children"><a href="#">Mahasiswa Dan Alumni</a>
 									<ul>
-										<li><a href="#">Portal Mahasiswa</a></li>
-										<li><a href="#">Alumni</a></li>
-										<li><a href="">Kegiatan Mahasiswa</a></li>
+										<li><a href="{{url('/mahasiswa-alumni/portal-mahasiswa')}}">Portal Mahasiswa</a></li>
+										<li><a href="{{url('/mahasiswa-alumni/alumni')}}">Alumni</a></li>
+										<li><a href="{{url('/mahasiswa-alumni/kegiatan-mahasiswa')}}">Kegiatan Mahasiswa</a></li>
 									</ul>
 								</li>
 								<li class="menu-has-children"><a href="#">Lembaga</a>
 									<ul>
-										<li><a href="#">LPPM</a></li>
-										<li><a href="#">UPM</a></li>
-										<li><a href="#">ASRAMA</a></li>
+										<li><a href="{{url('/lembaga/lppm')}}">LPPM</a></li>
+										<li><a href="{{url('/lembaga/upm')}}">UPM</a></li>
+										<li><a href="{{url('/lembaga/asrama')}}">ASRAMA</a></li>
 									</ul>
 								</li>
 							</ul>

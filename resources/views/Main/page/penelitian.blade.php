@@ -7,8 +7,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="hero-nav-area">
-						<h1 class="text-white">Penelitian</h1>
-						<h4 class="text-white link-nav">{{ $data->judul_profil }}</h4>
+						<h2 class="text-white">{{ $data->judul_profil }}</h2>
 					</div>
 				</div>
 			</div>
