@@ -56,7 +56,7 @@ $level = Auth::user()->level==1?'admin':(Auth::user()->level==0?'petugas':'');
     <a href="#" class="brand-link">
       <img src="{{asset('backend-assets/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Stikes Dirgahayu</span>
     </a>
     <div class="sidebar">
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
@@ -276,6 +276,41 @@ $level = Auth::user()->level==1?'admin':(Auth::user()->level==0?'petugas':'');
             </ul>
           </li>
           @if(Auth::user()->level==1)
+          <li class="nav-item has-treeview {{isset($info)?'menu-open':''}}">
+            <a href="#" class="nav-link {{isset($info)?$info:''}}">
+              <i class="nav-icon fa fa-info"></i>
+              <p>
+                Info Footer
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ url('/admin/info-footer/alamat') }}" class="nav-link @if(isset($page)){{$page=='info-alamat'?'active':''}}@endif">
+                  <i class="nav-icon fa fa-circle-o"></i>
+                  <p>
+                    Info Alamat
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/admin/info-footer/tautan') }}" class="nav-link @if(isset($page)){{$page=='info-tautan'?'active':''}}@endif">
+                  <i class="nav-icon fa fa-circle-o"></i>
+                  <p>
+                    Info Tautan
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/admin/info-footer/sosmed') }}" class="nav-link @if(isset($page)){{$page=='info-sosmed'?'active':''}}@endif">
+                  <i class="nav-icon fa fa-circle-o"></i>
+                  <p>
+                    Info Sosmed
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
           <li class="nav-item">
             <a href="{{ url('/admin/users') }}" class="nav-link">
               <i class="nav-icon fa fa-users"></i>

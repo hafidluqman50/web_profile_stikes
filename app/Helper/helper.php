@@ -7,6 +7,11 @@ function getThumbnail($url) {
 	return $http;
 }
 
+function infoFooter($ktr) {
+	$info_footer = App\Models\InfoFooterModel::where('keterangan',$ktr)->get();
+	return $info_footer;
+}
+
 function dateArticle($date) {
 	$explode = explode('-',$date);
 	return $explode[2].' '.month($explode[1]).' '.$explode[0];

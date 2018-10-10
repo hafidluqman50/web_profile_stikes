@@ -104,6 +104,9 @@ class KontenController extends Controller
             $img->resize(750,439);
             $img->save('frontend-assets/foto_'.$kategori.'/'.$photo);
         }
+        else {
+            $photo = '-';
+        }
         $id       = $request->id_konten;
         if ($id == '') {
             $array = [

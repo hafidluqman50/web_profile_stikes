@@ -15,7 +15,7 @@
       Anything you want
     </div> --}}
     <!-- Default to the left -->
-    <strong>Copyleft &copy; 2018-{{ date('Y') }}
+    <strong>Copyright &copy; Stikes Dirgahayu Samarinda {{ date('Y') }}
   </footer>
 </div>
 <!-- ./wrapper -->

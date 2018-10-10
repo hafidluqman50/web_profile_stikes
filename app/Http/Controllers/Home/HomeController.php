@@ -11,6 +11,7 @@ use App\Models\LinkTerkaitModel as LinkTerkait;
 use App\Models\DokumenModel as Dokumen;
 use App\Models\MajalahModel as Majalah;
 use App\Models\VisitorModel as Visitor;
+use App\Models\InfoFooterModel as InfoFooter;
 
 class HomeController extends Controller
 {

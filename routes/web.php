@@ -114,7 +114,7 @@ Route::group(['prefix'=>'admin','middleware'=>'isAdmin'],function(){
 	Route::get('/data-berita/edit/{id}',['as'=>'admin-berita-edit','uses'=>'Admin\KontenController@editBerita']);
 	Route::get('/data-pengumuman',['as'=>'admin-data-pengumuman','uses'=>'Admin\KontenController@pengumuman']);
 	Route::get('/data-pengumuman/tambah',['as'=>'admin-pengumuman-tambah','uses'=>'Admin\KontenController@tambahPengumuman']);
-	Route::get('/data-pengumuman/edit',['as'=>'admin-pengumuman-edit','uses'=>'Admin\KontenController@editPengumuman']);
+	Route::get('/data-pengumuman/edit/{id}',['as'=>'admin-pengumuman-edit','uses'=>'Admin\KontenController@editPengumuman']);
 	Route::get('/konten/{ktg}/delete/{id}',['as'=>'admin-delete-konten','uses'=>'Admin\KontenController@delete']);
 	Route::post('/konten/save',['as'=>'admin-save-konten','uses'=>'Admin\KontenController@save']);
 	// END KONTEN //
@@ -155,6 +155,20 @@ Route::group(['prefix'=>'admin','middleware'=>'isAdmin'],function(){
 	Route::get('/link/{ktg}/delete/{id}',['as'=>'admin-link-delete','uses'=>'Admin\LinkTerkaitController@delete']);
 	Route::post('/link/save',['as'=>'admin-link-save','uses'=>'Admin\LinkTerkaitController@save']);
 	// END LINK TERKAIT
+
+	// INFO FOOTER //
+	Route::get('/info-footer/alamat',['as'=>'info-footer-alamat','uses'=>'Admin\InfoFooterController@infoAlamat']);
+	Route::get('/info-footer/alamat/tambah',['as'=>'info-footer-alamat-tambah','uses'=>'Admin\InfoFooterController@tambahInfoAlamat']);
+	Route::get('/info-footer/alamat/edit/{id}',['as'=>'info-alamat-edit','uses'=>'Admin\InfoFooterController@editInfoAlamat']);
+	Route::get('/info-footer/tautan',['as'=>'info-footer-alamat','uses'=>'Admin\InfoFooterController@infoTautan']);
+	Route::get('/info-footer/tautan/tambah',['as'=>'info-footer-alamat-tambah','uses'=>'Admin\InfoFooterController@tambahInfoTautan']);
+	Route::get('/info-footer/tautan/edit/{id}',['as'=>'info-alamat-edit','uses'=>'Admin\InfoFooterController@editInfoTautan']);
+	Route::get('/info-footer/sosmed',['as'=>'info-footer-alamat','uses'=>'Admin\InfoFooterController@infoSosmed']);
+	Route::get('/info-footer/sosmed/tambah',['as'=>'info-footer-alamat-tambah','uses'=>'Admin\InfoFooterController@tambahInfoSosmed']);
+	Route::get('/info-footer/sosmed/edit/{id}',['as'=>'info-alamat-edit','uses'=>'Admin\InfoFooterController@editInfoSosmed']);
+	Route::get('/info-footer/{ktg}/delete/{id}',['as'=>'info-footer-delete','uses'=>'Admin\InfoFooterController@delete']);
+	Route::post('/info-footer/save',['as'=>'info-footer-save','uses'=>'Admin\InfoFooterController@save']);
+	// END INFO FOOTER //
 
 	// DATA USER //
 	Route::get('/users',['as'=>'admin-data-users','uses'=>'Admin\UsersController@users']);
@@ -199,7 +213,7 @@ Route::group(['prefix'=>'petugas','middleware'=>'isPetugas'],function(){
 	Route::get('/data-berita/edit/{id}',['as'=>'petugas-berita-edit','uses'=>'Petugas\KontenController@editBerita']);
 	Route::get('/data-pengumuman',['as'=>'petugas-data-pengumuman','uses'=>'Petugas\KontenController@pengumuman']);
 	Route::get('/data-pengumuman/tambah',['as'=>'petugas-pengumuman-tambah','uses'=>'Petugas\KontenController@tambahPengumuman']);
-	Route::get('/data-pengumuman/edit',['as'=>'petugas-pengumuman-edit','uses'=>'Petugas\KontenController@editPengumuman']);
+	Route::get('/data-pengumuman/edit/{id}',['as'=>'petugas-pengumuman-edit','uses'=>'Petugas\KontenController@editPengumuman']);
 	Route::get('/konten/{ktg}/delete/{id}',['as'=>'petugas-delete-konten','uses'=>'Petugas\KontenController@delete']);
 	Route::post('/konten/save',['as'=>'petugas-save-konten','uses'=>'Petugas\KontenController@save']);
 	// END KONTEN //
