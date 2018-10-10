@@ -49,7 +49,7 @@ Copyright &copy; Stikes Dirgahayu Samarinda {{date('Y')}}
 						</div>
 						<div class="col-md-8 footer-social">
 							@foreach (infoFooter('sosmed') as $element)
-							<a href="{{$element->link_info}}"><i class="fa {{$element->judul_info}}"></i></a>
+							<a href="{{$element->link_info}}"><i class="fa fa-{{$element->judul_info}}"></i></a>
 							@endforeach
 						</div>
 					</div>
