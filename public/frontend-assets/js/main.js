@@ -10,6 +10,36 @@ $(document).ready(function() {
     $(".fullscreen").css("height", window_height)
     $(".fitscreen").css("height", fitscreen);
 
+    // FAQ TOGGLE //
+    // $('.faq-question').click(function(){
+    //     $(this).next('.faq-answer:first').slideToggle();
+    // });
+
+    $('.faq-question').click(function(){
+        if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $(this).find('.icon-faq').css({transform:'rotate(0deg)',transition:'transform 250ms ease-in-out'});
+            $(this).next('.faq-answer:first').slideUp();
+        }
+        else {
+            if ($('.open').length > 0) {
+                $('.faq-answer').slideUp();
+                $('.open').removeClass('open');
+            }
+            $(this).addClass('open');
+            $(this).find('.icon-faq').css({transform:'rotate(-90deg)',transition:'transform 250ms ease-in-out'});
+            $(this).next('.faq-answer:first').slideDown();
+        }
+    });
+
+    // $('.open').click(function(){
+    //     $(this).removeClass('open');
+    //     $(this).next('.faq-answer:first').slideUp(function(){
+
+    //     });
+    // });
+    // END FAQ TOGGLE //
+
     //------- Niceselect  js --------//  
 
     if (document.getElementById("default-select")) {

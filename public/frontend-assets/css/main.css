@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Niramit');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 /******************************************************************
 Theme Name: Magazine 
 Description: 
@@ -89,6 +91,49 @@ $black			: #222;
   /* Microsoft Edge */
   color: #777777;
   font-weight: 300;
+}
+
+.faq-question {
+  width:100%;
+  cursor: pointer;
+  word-wrap: break-word;
+  font-weight: 500;
+  font-size:18px;
+  padding:10px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-family: 'Niramit', sans-serif;
+  border-bottom:1px solid lightgrey;
+}
+
+.faq-answer {
+  display: none;
+  width:100%;
+  word-wrap: break-word;
+  font-family: 'Roboto', sans-serif;
+  font-weight:500;
+  font-size:17px;
+  padding:10px;
+  margin-bottom:10px;
+}
+
+.rotated {
+  transform: rotate(-90deg);
+  transition: transform 200ms ease-in-out;
+}
+
+.icon-faq {
+  float:right;
+  font-weight: bold;
+  font-size:20px;
+}
+
+.icon-faq .fa-angle-left {
+  transition: transform 200ms ease-in-out;
+}
+
+.icon-faq .fa-angle-down {
+  transition: transform 200ms ease-in-out;
 }
 
 .google-translate{}

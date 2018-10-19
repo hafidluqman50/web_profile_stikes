@@ -52,6 +52,7 @@
 										<li><a href="{{ url('/tentang/arti-logo') }}">Arti Logo</a></li>
 										<li><a href="{{ url('/tentang/sejarah') }}">Sejarah</a></li>
 										<li><a href="{{ url('/tentang/daftar-nama-dosen') }}">Daftar Nama Dosen</a></li>
+										<li><a href="{{ url('/tentang/faq') }}">FAQ</a></li>
 									</ul>
 								</li>
 								<li class="menu-has-children"><a href="#">Pendaftaran</a>

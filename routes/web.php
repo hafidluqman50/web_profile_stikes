@@ -19,6 +19,7 @@ Route::get('/strlen',function(){
 });
 
 Route::get('/',['as'=>'home-page','uses'=>'Home\HomeController@index']);
+Route::get('/tentang/faq',['as'=>'tentang-faq','uses'=>'Home\HomeController@tentangFaq']);
 Route::get('/tentang/{url}',['as'=>'tentang-content','uses'=>'Home\HomeController@tentang']);
 Route::get('/tentang/visi-dan-misi/{url}',['as'=>'tentang-visi-misi','uses'=>'Home\HomeController@tentang']);
 Route::get('/pendaftaran/{url}',['as'=>'pendaftaran-content','uses'=>'Home\HomeController@pendaftaran']);

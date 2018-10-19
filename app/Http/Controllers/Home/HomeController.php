@@ -31,6 +31,11 @@ class HomeController extends Controller
     	return view('Main.page.tentang',compact('title','data'));
     }
 
+    public function tentangFaq() {
+        $title = 'FAQ';
+        return view('Main.page.faq',compact('title'));
+    }
+
     // public function visiMisi($url) {
     //     $data = Profil::where('halaman',$url)->where('menu','tentang')->firstOrFail();
     //     $title = $data->judul_profil;

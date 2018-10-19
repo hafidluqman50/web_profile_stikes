@@ -18,21 +18,13 @@
 			<div class="row">
 				<div class="col-lg-8 post-list">
 					<!-- Start single-post Area -->
-					<div class="single-post-wrap">{{-- 
-						<div class="feature-img-thumb relative">
-							<div class="overlay overlay-bg"></div>
-							<img class="img-fluid" src="{{asset('frontend-assets/img/g3.jpg')}}" alt="">
-						</div> --}}
+					<div class="single-post-wrap">
 						<div class="content-wrap">
-							{!!$data->konten!!}{{-- 
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.
-							</p> --}}{{-- 
-						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</blockquote> --}}
+							{!!$data->konten!!}
+						</div>
 					</div>
 				</div>
 				<!-- End single-post Area -->
-			</div>
 			<div class="col-lg-4">
 				<div class="sidebars-area">
 					<div class="single-sidebar-widget most-popular-widget">
