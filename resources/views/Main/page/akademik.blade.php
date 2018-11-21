@@ -6,7 +6,7 @@
 		<div class="container no-padding">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="hero-nav-area">
+					<div class="hero-nav-area no-background">
 						<h2 class="text-white">{{ $data->judul_profil }}</h2>
 					</div>
 				</div>

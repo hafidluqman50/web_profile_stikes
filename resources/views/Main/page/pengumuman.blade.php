@@ -6,8 +6,8 @@
 		<div class="container no-padding">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="hero-nav-area">
-						<h1 class="text-white">Pengumuman</h1>
+					<div class="hero-nav-transparent">
+						<h1 class="text-black">Pengumuman</h1>
 					</div>
 				</div>
 			</div>

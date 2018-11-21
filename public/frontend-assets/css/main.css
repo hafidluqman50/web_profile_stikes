@@ -93,6 +93,12 @@ $black			: #222;
   font-weight: 300;
 }
 
+.hero-nav-transparent {
+  text-align: center;
+  background: transparent;
+  padding: 65px 0px;
+}
+
 .faq-question {
   width:100%;
   cursor: pointer;

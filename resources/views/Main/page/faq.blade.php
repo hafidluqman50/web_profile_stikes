@@ -6,8 +6,8 @@
 		<div class="container no-padding">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="hero-nav-area">
-						<h2 class="text-white">FAQ</h2>
+					<div class="hero-nav-transparent">
+						<h2 class="text-black">FAQ</h2>
 					</div>
 				</div>
 			</div>
